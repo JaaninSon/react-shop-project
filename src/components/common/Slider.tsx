@@ -46,7 +46,7 @@ const Slider = () => {
       {items.map((item: ISliderItem, index: number) => {
         return (
           <div key={item.name} className="carousel-slide max-h-[220px] lg:max-h-[770px]">
-            <div className="carousel-description absolute left-auto right-auto bottom-1/4 lg:bottom-1/3 mb-0 lg:mb-10 text-left w-full lg:container px-4 md:px-10">
+            <div className="carousel-description absolute left-10 right-auto bottom-1/4 lg:bottom-1/3 mb-0 lg:mb-10 text-left w-full lg:container px-4 md:px-10 md:pl-10">
               <h2 className="text-2xl lg:text-4xl font-bold text-white">{item.title}</h2>
               <p className="my-2 text-white">{item.text}</p>
               <Link to={`/${item.name}`} className="btn btn-sm lg:btn-md mt-3">

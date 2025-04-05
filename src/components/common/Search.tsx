@@ -17,8 +17,7 @@ function Search({ inputValue, setInputValue }: SearchProps) {
   return (
     <div className={`${isVisible ? "block" : "hidden"}`}>
       {results.length > 0 && (
-        //
-        <ul className="!fixed left-0 sm:!absolute sm:top-14 menu flex-nowrap dropdown-content w-full sm:w-64 max-h-96 shadow text-base-content overflow-y-auto overflow-x-hidden dark:bg-gray-600 !text-gray-800 dark:!text-white">
+        <ul className="!fixed left-0 sm:!absolute sm:top-14 menu flex-nowrap bg-white dropdown-content w-full sm:w-64 max-h-96 shadow text-base-content overflow-y-auto overflow-x-hidden dark:bg-gray-600 !text-gray-800 dark:!text-white">
           {results.map((item) => (
             <li key={item.id} className="hover:bg-gray-100">
               <Link
